@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          username: joker0198
+          password: w0198h1987
+          uri: https://github.com/joker0198/config-repo-demo
+server:
+    port: 1201
