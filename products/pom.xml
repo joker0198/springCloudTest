@@ -11,7 +11,32 @@
   <name>products</name>
 
   <modules>
-    <module>eureka_products</module>
+    <module>eureka-server</module>
+    <module>eureka-client-01</module>
+    <module>eureka-client-02</module>
+    <module>eureka-client-03</module>
+    <module>eureka-consumer</module>
+    <module>eureka-consumer-ribbon</module>
+    <module>eureka-consumer-feign</module>
   </modules>
+
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>1.5.4.RELEASE</version>
+    <relativePath/>
+  </parent>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-dependencies</artifactId>
+        <version>Dalston.SR1</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
 </project>
