@@ -5,13 +5,12 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.wh.test</groupId>
-  <artifactId>springCloudTest</artifactId>
+  <artifactId>modules</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <modules>
-    <module>products</module>
-    <module>modules</module>
+    <module>services</module>
   </modules>
   <packaging>pom</packaging>
+  <name>modules</name>
 
-  <name>springCloudTest</name>
 </project>
