@@ -2,6 +2,7 @@ package com.wh.springtest;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.client.SpringCloudApplication;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
@@ -13,6 +14,7 @@ import org.springframework.web.client.RestTemplate;
  * @Description 服务消费Ribbon 主函数
  * @date 2019/3/20 14:21
  */
+@EnableCircuitBreaker
 @SpringCloudApplication
 public class EurekaConsumerRibbonHystrix {
 
